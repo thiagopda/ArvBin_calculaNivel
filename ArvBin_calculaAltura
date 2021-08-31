@@ -1,4 +1,5 @@
 
+
 public class ArvoreBinaria { 
 
 Nodo raiz; 	
@@ -75,6 +76,11 @@ public void calculaAltura (nodoA, nodoAtual, int valor) {
 
 
 
+
+OBS: Professor desde o início da disciplina não consegui rodar o Netbeans por conta das configurações da minha máquina, por tanto, tenho treinado o conteúdo
+ensinado em aula utilizando a stack em que trabalho e desenvolvo (PHP, Laravel...) logo não consegui testar o código dentro dos termos do curso utilizando 
+java e netbeans. Dito isso peço encarecidamente, se achar justo, que releve possíveis erros de sintaxe e foque na lógica utilizada. Foi o mais próximo que cheguei 
+dadas as condições de estrutura que possuo. 
 
 
 		
