@@ -1,0 +1,80 @@
+
+public class ArvoreBinaria { 
+
+Nodo raiz; 	
+
+struct Nodo{
+    Registro info;
+    struct Nodo *esq;
+    struct Nodo *dir; 
+ 
+
+/*metodo inserir */   
+      int insere_ArvBin(ArvBin *raiz, Registro valor){
+          if(raiz==NULL)
+          return 0;
+      
+          struct Nodo* novo;
+          novo = (struct Nodo*) malloc(sizeof(struct Nodo));
+            if(novo == NULL)  //se caso deu erro na alocação
+              return 0;
+    
+        novo->info = valor;
+        novo->dir = NULL;
+        novo->esq = NULL;
+    
+    
+    /*realizar busca para decidir onde será feita a inserção*/
+    if(*raiz==NULL). //caso a ávore esteja vazia então inserir
+        *raiz = novo;
+               else{
+               struct Nodo* atual = *raiz;
+               struct Nodo* ant = NULL;
+        
+       
+       //navegando em cada nó até chegar a um nó folha
+        while(atual!=NULL){
+            ant = atual;
+            if(valor.chave == atual->info.chave){
+                free(novo);
+                return 0;//elemento já existe
+            }
+            if(valor.chave > atual->info.chave)
+                atual = atual->dir;
+            else
+                atual = atual->esq;
+        }
+        //realiza a inserção como filho do nó folha
+        if(valor.chave > ant->info.chave)
+            ant->dir= novo;
+        else
+            ant->esq=novo;     
+    }
+    return 1;
+}
+   
+					
+/*Método CalculaAltura*/
+
+public void calculaAltura (nodoA, nodoAtual, int valor) {
+
+          nodoAtual = raiz;
+          int valor = 0;
+          while (nodoAtual != null && .getKey() != valor)
+                {
+                     if (valor < nodoA.getKey())
+                      {
+                      nodoA = nodoA.getEsq();
+                       } else {
+                        nodoA = nodoA.getDir();
+                       }
+                        valor++;
+                }
+                return valor;
+        }
+
+
+
+
+
+		
